@@ -1,10 +1,13 @@
 import React from 'react';
 import './App.css';
 import Cars from './Cars';
+import GlobalProvider from './providers/GlobalProvider';
 
 function App() {
   return (
-    <Cars />
+    <GlobalProvider>
+      <Cars />
+    </GlobalProvider>
   );
 }
 
